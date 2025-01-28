@@ -56,7 +56,7 @@
       <stop stop-color="#d94fb8" offset="1"/>
     </linearGradient>
     <filter id="outset_shadow" x="-2" y="-2" width="4" height="4">
-      <feFlood flood-color="#0006"/>
+      <feFlood flood-color="#0007"/>
       <feComposite operator="in" in2="SourceAlpha" in="shadowOffset"/>
       <feGaussianBlur stdDeviation="1"/>
       <feOffset result="shadowOffset" in="shadowOffset" dx="1" dy="1.2"/>
@@ -65,43 +65,44 @@
       <feComposite operator="over" in2="shadowOffset" in="SourceGraphic"/>
     </filter>
     <filter id="inset_shadow">
-      <feFlood flood-color="#0006"/>
+      <feFlood flood-color="#0007"/>
       <feComposite operator="out" in2="SourceAlpha" in="shadowOffset"/>
-      <feGaussianBlur stdDeviation="5"/>
-      <feOffset result="shadowOffset" in="shadowOffset" dx="-5" dy="-5"/>
+      <feGaussianBlur stdDeviation="2"/>
+      <feOffset result="shadowOffset" in="shadowOffset" dx="2" dy="2.4"/>
 
       <feFlood flood-color="#fff3"/>
       <feComposite operator="out" in2="SourceAlpha" in="lightOffset"/>
       <feGaussianBlur stdDeviation="2"/>
-      <feOffset result="lightOffset" in="lightOffset" dx="2" dy="2"/>
+      <feOffset result="lightOffset" in="lightOffset" dx="-2" dy="-2.4"/>
       
       <feComposite operator="atop" in2="SourceGraphic" in="shadowOffset"/>
       <feComposite operator="atop" in2="result" in="shadowOffset"/>
       <feComposite operator="atop" in2="result" in="lightOffset"/>
+      <feColorMatrix type="saturate" in="result" values="1.5"/>
     </filter>
   </defs>
   <g id="wheel_filter" filter="url(#inset_shadow)">
     <g id="wheel">
-      <g id="drop_red" transform="rotate(0,25,25)">
-        <use id="drop_shape_red" xlink:href="#drop_shape" style="fill:url(#drop_shape_red_gradient)"/>
-        <use id="drop_seam_red" xlink:href="#drop_seam" style="fill:url(#drop_seam_red_gradient)"/>
-      </g>
-      <g id="drop_yellow" transform="rotate(72,25,25)">
-        <use id="drop_shape_yellow" xlink:href="#drop_shape" style="fill:url(#drop_shape_yellow_gradient)"/>
-        <use id="drop_seam_yellow" xlink:href="#drop_seam" style="fill:url(#drop_seam_yellow_gradient)"/>
-      </g>
-      <g id="drop_green" transform="rotate(144,25,25)">
-        <use id="drop_shape_green" xlink:href="#drop_shape" style="fill:url(#drop_shape_green_gradient)"/>
-        <use id="drop_seam_green" xlink:href="#drop_seam" style="fill:url(#drop_seam_green_gradient)"/>
-      </g>
-      <g id="drop_blue" transform="rotate(216,25,25)">
-        <use id="drop_shape_blue" xlink:href="#drop_shape" style="fill:url(#drop_shape_blue_gradient)"/>
-        <use id="drop_seam_blue" xlink:href="#drop_seam" style="fill:url(#drop_seam_blue_gradient)"/>
-      </g>
-      <g id="drop_purple" transform="rotate(288,25,25)">
-        <use id="drop_shape_purple" xlink:href="#drop_shape" style="fill:url(#drop_shape_purple_gradient)"/>
-        <use id="drop_seam_purple" xlink:href="#drop_seam" style="fill:url(#drop_seam_purple_gradient)"/>
-      </g>
+        <g id="drop_red" transform="rotate(0,25,25)">
+          <use id="drop_shape_red" xlink:href="#drop_shape" fill="url(#drop_shape_red_gradient)"/>
+          <use id="drop_seam_red" xlink:href="#drop_seam" fill="url(#drop_seam_red_gradient)"/>
+        </g>
+        <g id="drop_yellow" transform="rotate(72,25,25)">
+          <use id="drop_shape_yellow" xlink:href="#drop_shape" fill="url(#drop_shape_yellow_gradient)"/>
+          <use id="drop_seam_yellow" xlink:href="#drop_seam" fill="url(#drop_seam_yellow_gradient)"/>
+        </g>
+        <g id="drop_green" transform="rotate(144,25,25)">
+          <use id="drop_shape_green" xlink:href="#drop_shape" fill="url(#drop_shape_green_gradient)"/>
+          <use id="drop_seam_green" xlink:href="#drop_seam" fill="url(#drop_seam_green_gradient)"/>
+        </g>
+        <g id="drop_blue" transform="rotate(216,25,25)">
+          <use id="drop_shape_blue" xlink:href="#drop_shape" fill="url(#drop_shape_blue_gradient)"/>
+          <use id="drop_seam_blue" xlink:href="#drop_seam" fill="url(#drop_seam_blue_gradient)"/>
+        </g>
+        <g id="drop_purple" transform="rotate(288,25,25)">
+          <use id="drop_shape_purple" xlink:href="#drop_shape" fill="url(#drop_shape_purple_gradient)"/>
+          <use id="drop_seam_purple" xlink:href="#drop_seam" fill="url(#drop_seam_purple_gradient)"/>
+        </g>
       <animateTransform id="wheel_animation_rotate" attributeType="xml" attributeName="transform" type="rotate" values="0 25 25; 360 25 25" dur="2s" repeatCount="indefinite" />
     </g>
   </g>
