@@ -1,0 +1,15 @@
+{
+  "name": "brand-assets",
+  "version": "1.0.0",
+  "description": "Script to convert SVG animations",
+  "main": "svgtogif.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "19.0.0",
+    "puppeteer-screen-recorder": "^3.0.6"
+  }
+}
