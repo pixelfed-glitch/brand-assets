@@ -115,6 +115,6 @@ version="1.1" width="50" height="50">
     </g>
   </g>
   <g id="center_logo">
-    <use id="center_logo_use" xlink:href="#center_logo_shape" style="fill:#ffffff;filter:url(#outset_shadow)"/>
+    <use id="center_logo_use" xlink:href="#center_logo_shape" style="fill:url(#center_logo_dark_gradient);filter:url(#outset_shadow)"/>
   </g>
 </svg>
