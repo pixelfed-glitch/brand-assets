@@ -22,10 +22,10 @@
         <use xlink:href="#center_logo_shape" id="center_logo_shape_fill" fill="#000"/>
     </mask>
 
-    <linearGradient id="center_logo_dark_gradient" gradientTransform="rotate(65 0.5 0.5)">
+    <linearGradient id="center_logo_white_gradient" gradientTransform="rotate(65 0.5 0.5)">
       <stop stop-color="#eee" offset="0"/>
       <stop stop-color="#ccc" offset="1"/>
     </linearGradient>
   </defs>
-  <circle transform="translate(12.5,12.5)" cx="25" cy="25" r="25" fill="url(#center_logo_dark_gradient)" mask="url(#center_logo_shape_mask)"/>
+  <circle transform="translate(12.5,12.5)" cx="25" cy="25" r="25" fill="url(#center_logo_white_gradient)" mask="url(#center_logo_shape_mask)"/>
 </svg>

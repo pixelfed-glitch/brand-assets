@@ -65,6 +65,10 @@ version="1.1" width="285" height="75">
       <stop stop-color="#333" offset="0"/>
       <stop stop-color="#111" offset="1"/>
     </linearGradient>
+    <linearGradient id="center_logo_white_gradient" gradientTransform="rotate(65 0.5 0.5)">
+      <stop stop-color="#eee" offset="0"/>
+      <stop stop-color="#ccc" offset="1"/>
+    </linearGradient>
     <filter id="outset_shadow" x="-2" y="-2" width="4" height="4">
       <feFlood flood-color="#0007"/>
       <feComposite operator="in" in2="SourceAlpha" in="shadowOffset"/>
@@ -128,7 +132,7 @@ version="1.1" width="285" height="75">
     font-weight="700"
     font-stretch="normal"
     font-size="2em"
-    fill="url(#center_logo_dark_gradient)"
+    fill="url(#center_logo_white_gradient)"
     fill-opacity="1"
     stroke="none">
       Pixelfed Glitch
