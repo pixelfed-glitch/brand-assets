@@ -61,6 +61,10 @@ version="1.1" width="50" height="50">
       <stop stop-color="#b92896" offset="0"/>
       <stop stop-color="#d94fb8" offset="1"/>
     </linearGradient>
+    <linearGradient id="center_logo_dark_gradient" gradientTransform="rotate(65 0.5 0.5)">
+      <stop stop-color="#333" offset="0"/>
+      <stop stop-color="#111" offset="1"/>
+    </linearGradient>
     <filter id="outset_shadow" x="-2" y="-2" width="4" height="4">
       <feFlood flood-color="#0007"/>
       <feComposite operator="in" in2="SourceAlpha" in="shadowOffset"/>

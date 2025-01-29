@@ -1,13 +1,13 @@
-# Pixelfed Artwork and Branding Assets
+# Pixelfed Glitch Artwork and Branding Assets
 
 ## Usage Guidelines
 
-Pixelfed as a brand is represented by two primary symbols, logo and mascot. This
+Pixelfed Glitch as a brand is represented by its logo. This
 is a detailed description and a guide for usage of both of them.
 
 ### Logo
 
-		When using Pixelfed logos you need to keep in mind that it's to
+		When using Pixelfed Glitch logos you need to keep in mind that it's to
 		represent software and creators of the software. Usage of the
 		logos in ways which are incompatible with that idea is not
 		recommended.
@@ -73,14 +73,6 @@ and the circle is not segmented.
 
 
 
-InterUI is used as a font next to logos.
+Noto Sans is used as a font next to logos.
 
-### Mascot
-
-![Fred in a Phone](/usage/fred_in_a_phone.svg)
-![Fred Static](/usage/fred_static.svg)
-
-Fred is the mascot of Pixelfed, it's a red panda, which is orange with brown
-accents. It can be drawn in any style, those images are just shown as examples
-of the ways Pixelfed represents it.
 

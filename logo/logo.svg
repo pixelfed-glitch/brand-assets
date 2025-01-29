@@ -5,7 +5,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 xmlns:svg="http://www.w3.org/2000/svg"
 xmlns="http://www.w3.org/2000/svg"
 xmlns:xlink="http://www.w3.org/1999/xlink"
-version="1.1" width="50" height="50">
+version="1.1" width="230" height="230">
   <metadata>
     <rdf:RDF>
       <cc:Work rdf:about="">
@@ -61,6 +61,10 @@ version="1.1" width="50" height="50">
       <stop stop-color="#b92896" offset="0"/>
       <stop stop-color="#d94fb8" offset="1"/>
     </linearGradient>
+    <linearGradient id="center_logo_dark_gradient" gradientTransform="rotate(65 0.5 0.5)">
+      <stop stop-color="#333" offset="0"/>
+      <stop stop-color="#111" offset="1"/>
+    </linearGradient>
     <filter id="outset_shadow" x="-2" y="-2" width="4" height="4">
       <feFlood flood-color="#0007"/>
       <feComposite operator="in" in2="SourceAlpha" in="shadowOffset"/>
@@ -86,6 +90,7 @@ version="1.1" width="50" height="50">
       <feColorMatrix type="saturate" in="result" values="1.2"/>
     </filter>
   </defs>
+  <g id="logo" transform="translate(15,15) scale(4)">
     <g id="wheel_filter" filter="url(#inset_shadow)">
       <g id="wheel">
         <g id="drop_red" transform="rotate(0,25,25)">
@@ -110,7 +115,8 @@ version="1.1" width="50" height="50">
         </g>
       </g>
     </g>
-  <g id="center_logo">
-    <use id="center_logo_use" xlink:href="#center_logo_shape" style="fill:#ffffff;filter:url(#outset_shadow)"/>
+    <g id="center_logo">
+      <use id="center_logo_use" xlink:href="#center_logo_shape" style="fill:url(#center_logo_dark_gradient);filter:url(#outset_shadow)"/>
+    </g>
   </g>
 </svg>

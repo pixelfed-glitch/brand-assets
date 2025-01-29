@@ -61,6 +61,10 @@ version="1.1" width="75" height="75">
       <stop stop-color="#b92896" offset="0"/>
       <stop stop-color="#d94fb8" offset="1"/>
     </linearGradient>
+    <linearGradient id="center_logo_dark_gradient" gradientTransform="rotate(65 0.5 0.5)">
+      <stop stop-color="#333" offset="0"/>
+      <stop stop-color="#111" offset="1"/>
+    </linearGradient>
 
     <rect id="glitch_rect_1" x="2" y="14" width="10" height="10"/>
     <rect id="glitch_rect_2" x="6" y="32" width="38" height="20"/>
@@ -201,7 +205,7 @@ version="1.1" width="75" height="75">
       </g>
     </g>
     <g id="center_logo">
-      <use id="center_logo_use" xlink:href="#center_logo_shape" style="fill:#ffffff;filter:url(#outset_shadow)"/>
+      <use id="center_logo_use" xlink:href="#center_logo_shape" style="fill:url(#center_logo_dark_gradient);filter:url(#outset_shadow)"/>
     </g>
   </g>
 </svg>
