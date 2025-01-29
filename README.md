@@ -13,9 +13,16 @@ is a detailed description and a guide for usage of both of them.
 		recommended.
 
 ![Icon](/logo/icon.svg)
-![Icon with text](/logo/icon_with_text.svg)
-![Symbolic](/logo/symbolic.svg)
 
+<p style="background-color:white; text-align:center">
+	<img src="logo/icon_with_text.svg" alt="Icon with text" />
+	<img src="logo/symbolic.svg" alt="Symbolic" />
+</p>
+
+<p style="background-color:black; text-align:center">
+	<img src="logo/icon_with_text_white.svg" alt="Icon with text" />
+	<img src="logo/symbolic_white.svg" alt="Symbolic" />
+</p>
 
 #### Description
 
@@ -70,6 +77,9 @@ and the circle is not segmented.
 
 ![logo_animated](/logo/logo_animated.svg)
 ![wheel_animated](/logo/wheel_animated.svg)
+
+
+![logo_glitch_animated](/logo/logo_glitch_animated.svg)
 
 
 
