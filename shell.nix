@@ -1,7 +1,7 @@
 { pkgs ? import <nixpkgs> {} }:
 pkgs.mkShell {
   name = "pixelfed-nix-shell";
-  buildInputs = with pkgs; [ ffmpeg-full nodejs nodePackages.npm ungoogled-chromium ];
+  buildInputs = with pkgs; [ ffmpeg-full nodejs nodePackages.npm ungoogled-chromium imagemagick ];
   runScript = "$SHELL";
   
   shellHook = ''

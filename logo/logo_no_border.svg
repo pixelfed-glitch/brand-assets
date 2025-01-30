@@ -5,7 +5,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 xmlns:svg="http://www.w3.org/2000/svg"
 xmlns="http://www.w3.org/2000/svg"
 xmlns:xlink="http://www.w3.org/1999/xlink"
-version="1.1" width="300" height="300">
+version="1.1" width="200" height="200">
   <metadata>
     <rdf:RDF>
       <cc:Work rdf:about="">
@@ -90,7 +90,7 @@ version="1.1" width="300" height="300">
       <feColorMatrix type="saturate" in="result" values="1.2"/>
     </filter>
   </defs>
-  <g id="logo" transform="translate(50,50) scale(4)">
+  <g id="logo" transform="scale(4)">
     <g id="wheel_filter" filter="url(#inset_shadow)">
       <g id="wheel">
         <g id="drop_red" transform="rotate(0,25,25)">
